@@ -1,0 +1,533 @@
+/* ===========================
+   FUNDACIÓN FRATERNIDAD SIN FRONTERAS
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333;
+    background:#f5f5f5;
+    line-height:1.6;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+.contenedor{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/*================ HEADER ================*/
+
+.header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:999;
+    background:#083b61;
+    box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
+
+.header .contenedor{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 0;
+}
+
+.logo img{
+    width:70px;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffd447;
+}
+
+.btn{
+    background:#28a745;
+    color:white;
+    padding:12px 25px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1f8c38;
+}
+
+/*================ HERO ================*/
+
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("../images/portada1.jpg") center center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-contenido{
+    max-width:900px;
+    margin-top:120px;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+.hero h2{
+    color:#ffd447;
+    font-size:36px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:35px;
+}
+
+.hero-botones{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.btn-verde{
+    background:#28a745;
+    color:white;
+    padding:15px 30px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.btn-blanco{
+    background:white;
+    color:#083b61;
+    padding:15px 30px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+/*================ SECCIONES ================*/
+
+section{
+    padding:70px 0;
+}
+
+h2{
+    text-align:center;
+    color:#083b61;
+    margin-bottom:40px;
+    font-size:35px;
+}
+
+/*================ NOSOTROS ================*/
+
+#nosotros{
+    background:white;
+}
+
+#nosotros .contenedor{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+#nosotros p{
+    margin-bottom:20px;
+    text-align:justify;
+    font-size:20px;
+    line-height:1.8;
+}
+
+.foto img{
+    border-radius:15px;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+    transition:.4s;
+}
+
+.foto img:hover{
+    transform:scale(1.03);
+}
+/*================ MISIÓN Y VISIÓN ================*/
+
+.misionvision{
+    background:#f0f5f8;
+    padding:90px 0;
+}
+
+.misionvision h2{
+    text-align:center;
+    color:#083b61;
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.contenedor-mv{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:40px;
+}
+
+.card{
+    background:white;
+    padding:50px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    text-align:center;
+   min-height: 420px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+}
+
+.card i{
+    font-size:50px;
+    color:#f0b400;
+    margin-bottom:25px;
+}
+.card h2{
+    color:#083b61;
+    margin-bottom:30px;
+}
+
+.card p{
+    font-size:20px;
+    line-height:1.8;
+    text-align:center;
+}
+}
+/*================ VALORES ================*/
+
+.valores{
+    background:white;
+}
+
+.valores-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.valor{
+    background:#083b61;
+    color:white;
+    text-align:center;
+    padding:30px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.valor:hover{
+    transform:translateY(-8px);
+    background:#0d5b91;
+}
+
+.valor h3{
+    margin-top:10px;
+}
+
+/*================ PROGRAMAS ================*/
+
+.programas{
+    background:#f5f5f5;
+}
+
+.grid-programas{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.programa{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.programa img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+.programa:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+.programa .info{
+    padding:25px;
+}
+
+.programa h3{
+    color:#083b61;
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.programa p{
+    font-size:18px;
+    line-height:1.7;
+    color:#555;
+}
+
+/*================ GALERÍA ================*/
+
+.galeria{
+    background:#ffffff;
+    padding:90px 0;
+}
+
+.galeria h2{
+    text-align:center;
+    color:#083b61;
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.grid-galeria{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.grid-galeria img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition:.4s;
+    cursor:pointer;
+}
+
+.grid-galeria img:hover{
+    transform:scale(1.05);
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+/*================ ALIADOS ================*/
+
+.aliados{
+    background:#083b61;
+    color:white;
+    text-align:center;
+}
+
+.aliados h2{
+    color:white;
+}
+
+.logos{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-top:30px;
+}
+
+.logo-item{
+    background:white;
+    color:#083b61;
+    padding:20px 30px;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+/*================ DONACIONES ================*/
+
+.donaciones{
+    background:#28a745;
+    color:white;
+    text-align:center;
+}
+
+.donaciones h2{
+    color:white;
+}
+
+.donaciones p{
+    max-width:800px;
+    margin:20px auto;
+}
+
+.donaciones .btn{
+    display:inline-block;
+    margin-top:25px;
+}
+
+/*================ CONTACTO ================*/
+
+.contacto{
+    background:white;
+}
+
+.contacto-grid{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.info p{
+    margin-bottom:15px;
+}
+.info h3{
+    color:#083b61;
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+.info p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+iframe{
+    width:100%;
+    height:350px;
+    border:none;
+    border-radius:12px;
+}
+
+/*================ FOOTER ================*/
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+/*================ RESPONSIVE ================*/
+
+@media(max-width:900px){
+
+.header .contenedor{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    margin:15px 0;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero h2{
+    font-size:24px;
+}
+
+.hero-botones{
+    flex-direction:column;
+}
+
+#nosotros .contenedor,
+.contenedor-mv,
+.grid-programas,
+.grid-galeria,
+.contacto-grid,
+.valores-grid{
+    grid-template-columns:1fr;
+}
+.hero{
+    height:auto;
+    padding:160px 20px 80px;
+}
+
+}
+.programa p{
+    flex:1;
+}
+/*================ WHATSAPP =================*/
+
+.whatsapp{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+     width: 70px;
+    height: 70px;
+    background: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 34px;
+    line-height: 1;
+    overflow: hidden;
+    z-index: 9999;
+    box-shadow: 0 8px 20px rgba(0,0,0,.3);
+    transition: .3s;
+}
+
+.whatsapp:hover{
+    transform: scale(1.15);
+    box-shadow: 0 12px 30px rgba(0,0,0,.35);
+}
+
+.whatsapp i{
+    display: block;
+}
